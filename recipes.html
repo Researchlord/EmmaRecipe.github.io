@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    transition: 0.7s ease-in-out;
+}
+body{
+    background-color: black;
+    min-height: 100vh;
+
+}
+header{
+    background-color: black;
+    color: white;
+}
+/*navbar section*/
+.container{
+    padding:1.5rem 2rem 0 2rem;
+    display: flex;
+    transition:1s ease-in;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right:10px;
+    margin-left: 0;
+    margin-top: -15px;
+    color:white;
+    padding:2px;
+    border-radius: 10px;
+    
+}
+.container .logo{
+  font-size:1.7rem;
+  font-weight:500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.logo span{
+    color:orangered;
+    margin-left:1px;
+    font-weight: 700;
+    
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding:0.5em;
+}
+nav ul a{
+    color: white;
+    text-decoration: none;
+    line-height:2.5rem;
+    padding:0 20px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-btn{
+    background-color:orangered;
+    padding:6px;
+    border-radius: 5px;
+}
+nav a:hover{
+    background-color: white;
+    color:black;
+    width:100%;
+    transition: 1s;
+    padding:5px 25px;
+}
+.label{
+    font-size:1.4rem;
+    font-weight:900;
+}
+nav ul:last-child{
+    width:100%;
+    flex-basis: 100%;
+}
+input[type='checkbox']:not(:checked)+ul{
+    display:none;
+ }
+ nav input[type='checkbox'], nav label{
+     display: none;
+ }
+ nav label{
+    display: block;
+    text-align: center;
+    padding:0.7rem;
+    border-radius:6px;
+    background-color: orangered;
+    color:black;
+    line-height:1rem;
+    margin-top:5px;
+    align-self: center;
+  }
+  /*hero section*/
+  .hero-section{
+    background-image: url(hamburger1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin:20px 25px 30px 25px;
+    height:230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.6rem;
+    letter-spacing: 2px;
+    border-radius:10px;
+    opacity: 0.7;
+  }
+  main{
+    color:white;
+    margin-top: 20px;
+    padding:0px 20px;
+  }
+  .main-section{
+    font-size: 1.3rem;
+    line-height:2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .main-section h1{
+    text-align: center;
+    font-size: 2rem;
+  }
+  .btn{
+      text-decoration: none;
+      background-color:white;
+      color:black;
+      display: flex;
+      margin:0 auto;
+      margin-top: 15px;
+      width:230px;
+      padding:10px 0;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+  }
+  .main-section-e h1{
+    font-size: 2rem;
+  }
+  .main-section-e{
+    font-size:1.3rem;
+  }
+  footer{
+    color:white;
+}
+footer img{
+    border-radius: 15px;
+}
+.footer-icon img{
+    margin-top:20px;
+    margin-left: 10px;
+}
+.footer-icon span{
+    color:orangered;
+}
+.last-btn{
+    text-decoration: none;
+    background-color: orangered;
+    color:black;
+    font-size:1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    width:270px;
+    padding:20px 0;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Emma<span>Recipes</span></div>
+            <nav>
+            <label class="label" for="menu">
+             &#9776
+            </label>
+            <input id="menu" type="checkbox">
+                <ul>
+                    <li><a href="index.html">Home</a> </li>
+                    <li><a href="about.html">About</a> </li>
+                    <li><a href="tag.html">Tags</a> </li>
+                    <li><a href="recipes.html">Recipes</a> </li>
+                    <li><a class="nav-btn" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            </div>
+            <div class="hero-section">
+                <h1>Recipes</h1>
+            </div>
+            </header>
+            <main>
+                <section class="main-section">
+                    <h1>Jollof Rice</h1>
+                    <br>
+                    <img src="jollof.jpg" width="100%" height="450px">
+                    <br>
+                    <br>
+                    <p>Jollof rice is bold,deeply red, and explodes with flavor.
+                        Mostly eaten in West Africa i.e Nigeria , Ghana etc...</p>
+                      <br>
+                      <h2>Jollof Rice Recipes</h2>
+                      <img src="jollof.jpg" width="100%" height="400px">
+                      <br
+                      <p>There are hundreds of different dishes in the world,
+                         but there is only a handful that has enough flavor for me to eat alone.A bowl
+                        of jollof rice is one of those dishes.jollof is a staple in west african cuisine.
+                   it's made from rice,tomatoes,onions,peppers,and other seasonings. </p>
+                   <h3><b>Ingredients used to make jollof</b></h3>
+                   <li>Rice</li>
+                   <li>Canned tomato,fresh tomato,bell peppers,scotch bonnet,onions,</li>
+                   <li>oil preferably any vegetable oil would do</li>
+                   <li>Stock-Chicken,beef,fish etc</li>
+                   <li>Seasoning and herbs- curry powder,salt,bay leaves,thyme etc..</li>
+                      <br>
+                      <h3>Preparation Process</h2>
+                      <li><b>Step1:</b>Sauteeing the Onions.This should take about 3-5mins.The next thing is to stir in the tomato paste.
+                    This adds a deep and rich tomato flavor;i simply fry this for another 5mins or thereabout.</li>
+                    <li><b>Step2:</b>Add the blended pepper.Usually,there is no particular time frame for frying this pepper
+                   . i often stop when the sauce becomes really thick, and the oil literally floats on top of the sauce.At this point,most of the water is gone,and the sauce no longer smells raw and better
+                    <a href="https://cheflolaskitchen.com/jollf-rice/">Continue reading</a></li>
+                    <center>
+                    &#9733 &#9733 &#9733 &#9733 &#9733
+                  </center>
+                    <section class="main-section-b">
+                <br><br>
+                <center>
+                <h1>Nigerian Fried Rice</h1>
+                <br>
+               <a href="naijafriedrice2.jpg"><img src="naijafriedrice2.jpg" width="100%" height="300px"></a>
+               <p>Nigerian Fried Rice is a dish of cooked rice that has been stir-fried in a work or frying pan and is usually mixed with other ingredients such as beef liver ,seafoods,oil etc.
+                Nigerian Fried Rice is one of the most delicious and easiest nigerian dishes.It is a common dish at parties/occasions in Nigeria.
+                it is also common in Nigeria parties in disapora.
+                <img src="naijafriedrice.jpg" width="100%" height="400px">
+                <p>
+                    Nigerian homes and abroad cherish this special delicacy so much alongside jollof rice which is loved and eaten all over West Africa.
+                    Most homes always  have it in menu list on special occasions like family get together,weddings and also Christmas celebration.
+                </p>
+            </p>
+               <P>To grab the full recipe and cooking instructions
+                <a href="https://www.allnigerianrecipes.com/rice/nigerian-fried-rice/">Click this link</a>
+               </p>
+               &#9733 &#9733 &#9733 &#9733 &#x2606
+
+            </section>
+            <section class="main-section-c">
+              <br><br>
+             <center> <h2>Bobotie</h2></center>
+              <br>
+              <center>
+              <a href="bobotie.jpg"><img src="bobotie.jpg" width="100%" height="300px"></a>
+              <br>
+              <p>Bobotie is a delicious South African dish consisting of spiced minced meat baked with an egg-based topping.It was often adopted by the cape malay community.
+                it's a marriage of cuisines born in Cape Town. The baked minced meat comes from Europe  similar to mousaka, and the spices from historically malayand indian influence.Hence,the cuisine,cape malay.
+              </p>
+              &#9733 &#9733 &#9733 &#9733 &#x2606
+              <a class="btn" href="https://www.pantsdownapronson.com"/south-african-bobotie-recipe/">Check recipe</a>
+            </section>
+            <br>
+            <br>
+            <br>
+            <section class="main-section-d">
+                <h1>Plantain Chips</h1>
+                <br>
+                <img src="plantain1.jpg" width="100%" height="350px">
+               <br>
+                <p> Plantain chips are crunchy,crispy fried or baked plantains.This mouth watering chips is popular all over the world.
+                    Plantain chips are crunchy,savory.Plantain chips has a similar texture to that of tortilla chips but with plantain flavor.the crunchy and mouth watering taste is so yummy.</p>
+                </p>
+                <center>
+                &#9733 &#9733 &#9733 &#9733 &#x2606
+                <a class="btn" href="https://www.preciouscore.com/plantain-chips/">Check Recipe</a>
+            </section>
+        </center>
+            <br>
+            <br>
+             </section>
+             <section class="main-section-e">
+                <br>
+                <center>
+                <h1>Semo and Egusi</h1>
+                <br>
+                <br>
+                <img src="semo.jpg" width="100%" height="400px">
+          <br><br>
+              <p>Semo is a delicious food consumed mostly in Nigeria especially the yoruba tribe with the mouth watering egusi soup.
+                Semo is a Nigerian swallow eaten with various soups,such as egusi soup,okro soup,efo riro,ogbono etc...
+              </p>
+              &#9733 &#9733 &#9733 &#9733 &#9733
+              <a class="btn" herf= " https://www.fmnfoods.com/2021/07/29/semovita-egusi-soup/?amp=1">Check Recipe</a>
+            </section>
+            </main>
+            <br>
+            <br>
+<a class="last-btn" href="https://africa-cuisine.com">Discover More </a>
+            <br>
+            <br><br>
+            <footer>
+                <center>
+                <div class="img-box">
+                    <img src="crispychicken2.jpg" width="115px">
+                    <img src="plantain2.jpg" width="100px">
+                    <img src="friedpotatoes2.jpg" width="100px">
+                    <img src="semo.jpg" width="100px">
+                    <img src="omelette.jpeg" width="100px">
+                </div>
+                <div class="footer-icon">
+                    <h1>Emma<span>Recipes</span></h1>
+                    <img src="fblogo.jpg" width="30px">
+                    <img src="instalogo.jpg" width="30px">
+                    <img src="twitterlogo.jpg" width="30px">
+                </div>
+                <section class="last-part">
+                    <p>Copyright@2024 All rights reserved |</p>
+                </section>
+            </footer>
+</body>
+</html>
